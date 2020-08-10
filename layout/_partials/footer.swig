@@ -49,6 +49,7 @@
       {%- set next_site = 'https://' + theme.scheme | lower + '.theme-next.org' %}
     {%- endif %}
     {{- __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'}) + ' & ' + next_url(next_site, 'NexT.' + theme.scheme, {class: 'theme-link'})) }}
+    <span class="post-count">| 博客共{{ totalcount(site) }}字</span>
   </div>
 {%- endif %}
 
