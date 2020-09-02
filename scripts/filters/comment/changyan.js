@@ -12,7 +12,7 @@ hexo.extend.filter.register('theme_inject', injects => {
 
   injects.comment.raw('changyan', `
   <div class="comments">
-    <div id="SOHUCS" sid="<%= page.permalink %>"></div>
+    <div id="SOHUCS"></div>
   </div>
   `, {}, {cache: true});
 
