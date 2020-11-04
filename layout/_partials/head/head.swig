@@ -2,6 +2,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 <meta name="generator" content="Hexo {{ hexo_version }}">
+<!-- Referrer Policy调整致不蒜子单页面统计出错:https://senorui.top/posts/c33f.html -->
+<meta name="referrer" content="no-referrer-when-downgrade">
 
 {%- if theme.favicon.apple_touch_icon %}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for(theme.favicon.apple_touch_icon) }}">
